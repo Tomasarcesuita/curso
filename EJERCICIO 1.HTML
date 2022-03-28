@@ -16,7 +16,7 @@
     clickeados, cambien el color de fondo del documento. Cada cuadrado debera
     tener un color distinto.</h3>
 
-    <diV class="FONDO"></diV>
+    <diV class="FONDO" ></diV>
 
     
     <P>
@@ -26,14 +26,16 @@
   
     </P>
     <script>
+        var FONDO = document.getElementsByClassName('FONDO')[0];
         var botonazul = document.getElementById('botonazul');
         var botonrojo = document.getElementById('botonrojo');
         var botondorado = document.getElementById('botondorado')
 
-       botonazul.addEventListener( 'clicl', function() {
-           fondo.classlist.add('botonazul');
-       });
+        botonazul.addEventListener('click', function() {
+            fondo.classList.add('fondo.azul');
+        });
 
+       
 
 
 
